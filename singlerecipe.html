@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimplyMeals</title>
+    <style>
+                  /* General styles */
+                  body {
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                      sans-serif;
+                    margin: 0;
+                    padding: 0;
+                  }
+
+                  /* Header and title */
+                  header {
+                    background-color: #431d0e;
+                    color: white;
+                    padding: 10px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 48px;
+                    font-family: papyrus;
+                  }
+
+                  header h1 {
+                    margin: 0;
+                  }
+                  header a {
+        color: white;
+        text-decoration: none;
+                  }
+                  /* Navigation menu */
+                  nav {
+                    background-color: #fff;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 20px;
+                  }
+
+                  nav a {
+                    color: #000;
+                    padding: 14px 20px;
+                    text-decoration: none;
+                    display: inline-block;
+                    text-align: center;
+                  }
+
+                  nav a:hover {
+                    background-color: #f4f4f4; /* Slight gray on hover */
+                    color: black;
+                  }
+
+                  /* Banner  */
+                  .banner {
+                    width: 100%;
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; /* Centers the content vertically */
+                    flex-direction: column; /* Stack elements vertically */
+                    font-size: 70px;
+                    font-weight: bold;
+                    background-image: url("images/bg.jpg"); /* Add your image URL here */
+                    background-size: cover; /* Ensures the image covers the entire banner */
+                    background-position: center; /* Centers the image */
+                    color: white;
+                    position: relative;
+                  }
+            /* Body */
+        /* First row with three columns */
+        .row-1 {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 20px; /* Space between rows */
+              }
+
+              .column {
+                  width: 30%; /* Each column takes up 30% of the container width */
+                  height: 400px; /* Set the height to 400px for each box */
+                  background-color: #9f928e;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+
+              }
+              .column img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+              /* Second row with one horizontal rectangle */
+              .row-2 {
+                  width: 100%;
+                  height: 400px;
+                  background-color: #9f928e;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+              }
+
+              /* Optional: add some padding inside the boxes */
+              .column, .row-2 {
+                  padding: 15px;
+              }
+
+
+
+                  /* Footer */
+                  footer {
+                    background-color: #431d0e;
+                    color: white;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between; /
+                  }
+
+                  /* Footer columns */
+                  footer .footer-column {
+                    width: 30%;
+                    padding: 10px;
+                  }
+                  footer .footer-column:last-child {
+                    padding-left: 30px;
+                  }
+                  /* Footer links */
+                  footer a {
+                    color: white;
+                    text-decoration: none;
+                  }
+
+                  footer a:hover {
+                    text-decoration: underline;
+                  }
+      /* Responsive Design */
+      @media (max-width: 768px) {
+                  .row-1 {
+                      flex-direction: column;
+                  }
+
+                  .column {
+                      width: 100%;
+                      margin-bottom: 20px; /* Add space between columns */
+                  }
+              }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1><a href="homepage.html">SimplyMeals</a></h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <div>
+        <a href="recipes.html">Recipes</a>
+        <a href="mealplans.html">Meal Plans</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </nav>
+
+    <!-- Banner x -->
+    <div class="banner">Chicken Caesar Wrap</div>
+
+    <!-- body x -->
+    <div class="container">
+      <!-- First Row -->
+      <div class="row-1">
+        <div class="column">
+          <h2>Chicken Caesar Wrap</h2>
+          <p>Time:10-15 minutes</p>
+          <p>Yield: 4</p>
+          <p>Allergens: Eggs, Dairy, Gluten</p>
+        </div>
+        <div class="column">
+          <h2>Ingredients:</h2>
+          <p>1 rotisserie chicken</p>
+          <p>1 tablespoon olive oil</p>
+          <p>1 teaspoon garlic powder</p>
+          <p>1 teaspoon paprika</p>
+          <p>4 large flour tortillas</p>
+          <p>1 ½ cups Romaine lettuce, chopped</p>
+          <p>1 cup Caesar dressing</p>
+          <p>1 cup shredded Parmesan cheese</p>
+          <p>1 cup croutons, crushed</p>
+        </div>
+        <div class="column">
+          <!-- Content for third vertical rectangular box -->
+          <h2>Video Directions</h2>
+          <img src="images/caesar.jpg" alt="Chicken Caesar Wrap" />
+    
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="row-2">
+        <h2>Written Directions:</h2>
+        <p>1. Shred and season your chicken for added flavor. </p>
+        <p>2. Warm the tortillas slightly.</p>
+        <p>3. In a bowl, combine the Romaine lettuce with the Caesar dressing. Combine until the lettuce is well-coated.
+           </p>
+            
+           <p>4. Lay each tortilla flat on a surface.
+            Place a generous amount of the lettuce in the center of each tortilla.
+            Add a few slices of the cooked chicken on top of the lettuce.
+            Sprinkle shredded Parmesan cheese and crushed croutons.</p> 
+            
+            <p>5. Fold in the sides of the tortilla and then roll it tightly from the bottom to form a wrap.</p>
+            
+            <p>6. Slice each wrap in half and serve immediately.</p>. 
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p>Phone: 888-888-888</p>
+        <p>Email: simplymeals@info.com</p>
+        <p>Hours: 6 AM - 6 PM</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <p><a href="recipes.html">Recipes</a></p>
+        <p><a href="mealplans.html">Meal Plans</a></p>
+        <p><a href="blog.html">Blog</a></p>
+        <p><a href="about.html">About</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <p>@SimplyMeals</p>
+      </div>
+    </footer>
+  </body>
+</html>

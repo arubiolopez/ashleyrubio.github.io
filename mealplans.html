@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimplyMeals</title>
+    <style>
+      /* General styles */
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Header and title */
+      header {
+        background-color: #431d0e;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 48px;
+        font-family: papyrus;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+      header a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Navigation menu */
+      nav {
+        background-color: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      nav a {
+        color: #000;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+      }
+
+      nav a:hover {
+        background-color: #f4f4f4; /* Slight gray on hover */
+        color: black;
+      }
+
+      /* Banner  */
+      .banner {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centers the content vertically */
+        flex-direction: column; /* Stack elements vertically */
+        font-size: 70px;
+        font-weight: bold;
+        background-image: url("images/bg.jpg"); /* Add your image URL here */
+        background-size: cover; /* Ensures the image covers the entire banner */
+        background-position: center; /* Centers the image */
+        color: #fff;
+        position: relative;
+      }
+
+      .subheader {
+        background-color: #fff;
+        text-align: left;
+        padding: 20px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #000
+      }
+      /* Body*/
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .left-column,
+      .middle-column,
+      .right-column {
+        flex: 1 1 30%;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .left-column,
+      .right-column {
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .middle-column {
+        background-color: #fff;
+        text-align: center;
+      }
+
+
+      .column img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      .column a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .column {
+        margin-bottom: 20px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #431d0e;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between; /
+      }
+
+      /* Footer columns */
+      footer .footer-column {
+        width: 30%;
+        padding: 10px;
+      }
+      footer .footer-column:last-child {
+        padding-left: 30px;
+      }
+      /* Footer links */
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .left-column,
+        .middle-column,
+        .right-column {
+          flex: 1 1 100%;
+        }
+
+        .search-box {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1><a href="homepage.html">SimplyMeals</a></h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <div>
+        <a href="recipes.html">Recipes</a>
+        <a href="mealplans.html">Meal Plans</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">Meal Plans</div>
+    <!-- Subheader -->
+    <div class="subheader">All Meal Plans</div>
+    <!-- Main Content (Four Rows and Three Columns) -->
+    <div class="container">
+      <div class="left-column">
+        <!-- Row 2 -->
+        <div class="column">
+          <img src="images - Copy/greek.jpg" alt="Greek Yogurt Parfait" />
+          <p>Greek Yogurt Parfait</p>
+          <p>Time: 5 minutes</p>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="column">
+          <img src="images - Copy/smoothie.jpeg" alt="Protein Smoothie" />
+          <p>Protein Smoothie</p>
+          <p>Time: 5-7 minutes</p>
+        </div>
+        <!-- Row 3 -->
+        <div class="column">
+          <img src="images - Copy/avo.jpeg" alt="Avocado Toast with Eggs" />
+          <p>Avocado Toast with Eggs</p>
+          <p>Time: 5-7 minutes</p>
+        </div>
+      </div>
+
+      <div class="middle-column">
+        <!-- Row 2 -->
+        <div class="column">
+          <img src="images - Copy/turkey.jpg" alt="Turkey Wraps" />
+          <p>Turkey Wraps</p>
+          <p>Time: 5 minutes</p>
+        </div>
+        <!-- Row 3 -->
+        <div class="column">
+          <img src="images - Copy/egg.jpg" alt="Egg Salad Sandwich" />
+          <p>Veggie Pizza</p>
+          <p>Time: 10 minutes</p>
+        </div>
+        <!-- Row 4 -->
+        <div class="column">
+          <img
+            src="images - Copy/greeksalad.jpg"
+            alt="Greek Salad with Chicken"
+          />
+          <p>Greek Salad with Chicken</p>
+          <p>Time: 10 minutes</p>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <!-- Row 2 -->
+        <div class="column">
+          <img src="images - Copy/chicken.jpg" alt="Chicken Quesadillas" />
+          <p>Chicken Quesadillas</p>
+          <p>Time: 10-15 minutes</p>
+        </div>
+        <!-- Row 3 -->
+        <div class="column">
+          <img src="images - Copy/tofu.jpeg" alt="Tofu Stir Fry" />
+          <p>Tofu Stir Fry</p>
+          <p>Time: 15-20 minutes</p>
+        </div>
+        <!-- Row 4 -->
+        <div class="column">
+          <img src="images - Copy/salad.jpg" alt="Taco Salad" />
+          <p>Taco Salad</p>
+          <p>Time: 10-15 minutes</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p>Phone: 888-888-888</p>
+        <p>Email: simplymeals@info.com</p>
+        <p>Hours: 6 AM - 6 PM</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <p><a href="recipes.html">Recipes</a></p>
+        <p><a href="mealplans.html">Meal Plans</a></p>
+        <p><a href="blog.html">Blog</a></p>
+        <p><a href="about.html">About</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <p>@SimplyMeals</p>
+      </div>
+    </footer>
+  </body>
+</html>
